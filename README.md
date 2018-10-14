@@ -5,7 +5,9 @@ This repository contains all files related to my capstone project for the [Machi
 * **Supervised learning**: the numerical solution can be seen as set of feature/label pairs. The loss function is defined such that the difference between the MLP evaluated at the discrete mesh locations, and the numerical solution, calculated beforehand, becomes minimal.
 * **Partial derivatives of the MLP**: because the MLP is always a continuous, smooth function, its gradient with respect to the input features can be computed. The loss function is then defined such that the residual of the approximated partial derivatives forming the differential equation becomes minimal.
 
-A more detailed description of the basic ideas can be found in the *capstone_report.pdf* document.
+A more detailed description of the basic ideas can be found in the *capstone_report.pdf* document. The maximum error of the final model is about one percent.
+
+![best_model](best_model.png)
 
 ## Files and folders
 - *pdeUtils.py*: implementation of the neural network, custom functions, error norms, and complementary functions
